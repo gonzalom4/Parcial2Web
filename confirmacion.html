@@ -5,41 +5,43 @@
     <title>Confirmación</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/form.css">
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/png-transparent-john-wick-keanu-reeves-thumbnail.png">
 </head>
 <body>
     <header>
         <h1><a href="index.html">peliculas<span>.com</span></a></h1>
     </header>
-
     <main>
         <div class="content">
             <h2 class="titulo">¡Gracias por tu opinión!</h2>
             <p class="texto" id="mensaje-personalizado">
                 Cargando mensaje...
             </p>
-            <p class="texto" style="text-align:center; margin-top: 30px;">
-                <a href="home.html">Volver al inicio</a>
+            <p class="texto">
+                Agradecemos tu tiempo y tu interés <br> por el universo de <strong>John Wick</strong>.
+            </p>
+            <p class="texto">
+                <a href="index.html">Volver al inicio</a>
             </p>
         </div>
     </main>
-
     <footer>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-        <p>&copy; 2025 Sitio fan de John Wick</p>
+            <p>¿Querés saber más sobre John Wick?</p>
+            <p>Seguinos en nuestras redes:</p>
+            <ul>
+                <li><a href="https://www.instagram.com/johnwickmovie">Instagram</a></li>
+                <li><a href="https://twitter.com/JohnWickMovie">Twitter</a></li>
+                <li><a href="https://www.facebook.com/johnwickmovie">Facebook</a></li>
+            </ul>
+            <p>&copy; 2025 peliculas.com</p>
     </footer>
-
     <script>
         const params = new URLSearchParams(window.location.search);
         const nombre = params.get("nombre");
 
         const mensaje = document.getElementById("mensaje-personalizado");
         if (nombre) {
-            mensaje.innerHTML = `¡Hemos recibido tu comentario con éxito, <strong>${nombre}</strong>!<br>
-            Agradecemos tu tiempo y tu interés por el universo de John Wick.`;
+            mensaje.innerHTML = `¡Hemos recibido tu comentario con éxito, <strong>${nombre}</strong>!`;
         } else {
             mensaje.innerText = "Hemos recibido tu comentario.";
         }

@@ -1,7 +1,7 @@
  .content{
     width: 50%;
     margin: 3vh auto;
-    padding: 3vw;
+    padding: 2.6vw;
     background-color: #1414144d;
     box-shadow: 0 0px 1.5vw #4d475598;
     border-radius: 2vw;
@@ -10,40 +10,64 @@
     align-items: center;
  }
 
-
 form {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 30vw;
     margin: auto;
+    padding-bottom: 3vw;
+}
+
+label{
+    font-size: 1vw;
 }
 
 input, textarea, button {
-    padding: 10px;
-    font-size: 16px;
+    padding: 0.4vw;
+    font-size: 1vw;
     border-radius: 6px;
     border: none;
-    margin-bottom: 15px;
 }
 
-p {
+#mensaje-personalizado{
+    font-size: 1.6vw;
+}
+
+main p {
     text-align: center;
-    font-size: 1.5vw;
-    padding: 5vw;
 }
 
-main a{
+.titulo{
+    font-size: 2vw;
+}
+
+.texto{
     font-size: 1.5vw;
 }
 
 button {
-    background-color: #56ccf2;
-    color: black;
+    background-color: #363897;
+    color: rgb(15, 15, 15);
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    padding: 0.5vw;
 }
 
 button:hover {
+    background-color: #00aaff;
+}
+
+.content a{
+    background-color: #363897;
+    color: rgb(15, 15, 15);
+    font-weight: bold;
+    font-size: 1.2vw;
+    padding: 1vw;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.content a:hover{
     background-color: #00aaff;
 }
